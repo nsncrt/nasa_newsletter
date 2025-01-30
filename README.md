@@ -1,4 +1,4 @@
-# NASA Newsletter
+# NASA Newsletter 🪐 📷
 
 This project sends a daily email with NASA's Astronomy Picture of the Day (APOD) to a list of recipients. The email includes the image, its title, description, and other metadata.
 

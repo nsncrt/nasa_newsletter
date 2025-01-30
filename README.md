@@ -48,3 +48,7 @@ This project sends a daily email with NASA's Astronomy Picture of the Day (APOD)
 - Ensure that the `img/` directory exists in the root folder if you want to save images locally.
 - The `config.json` file and `mailing_list.csv` file should be properly configured before running the script.
 - Configure a **Cron Job** to deploy the script and ensure daily newsletter.
+
+## Links
+- [NASA API](https://api.nasa.gov/)
+- [NASA Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html)

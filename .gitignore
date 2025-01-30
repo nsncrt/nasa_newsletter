@@ -1,0 +1,7 @@
+**/__pycache__/
+*.pyc
+**/save.csv
+**/config.json
+**/.DS_Store
+**/mailing_list.csv
+**/mailing_list_save.csv

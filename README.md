@@ -11,7 +11,7 @@ This project sends a daily email with NASA's Astronomy Picture of the Day (APOD)
 - `data/`
   - `mailing_list.example.csv`: Example CSV file for the mailing list.
 - `main.py`: Main script to run the project.
-- `config.json`: Configuration file for API keys and SMTP server details.
+- `config.example.json`: Configuration file for API keys and SMTP server details.
 
 ## Setup
 
@@ -27,31 +27,9 @@ This project sends a daily email with NASA's Astronomy Picture of the Day (APOD)
     ```
 
 3. **Configure the project:**
-    - Create a `config.json` file in the root directory with the following structure:
-      ```json
-      {
-        "api": {
-          "url": "https://api.nasa.gov/planetary/apod",
-          "key": "YOUR_NASA_API_KEY"
-        },
-        "smtp": {
-          "server": "your_smtp_server",
-          "port": 465
-        },
-        "sender": {
-          "email": "your_email@example.com",
-          "pwd": "your_email_password"
-        }
-      }
-      ```
+    - Create a `config.json` file in the root directory with the given structure
+    - Create a `data/mailing_list.csv` file with the given structure
 
-4. **Prepare the mailing list:**
-    - Create a `data/mailing_list.csv` file with the following structure:
-      ```csv
-      name,email
-      John Doe,johndoe@example.com
-      Jane Smith,janesmith@example.com
-      ```
 
 ## Usage
 
@@ -69,3 +47,4 @@ This project sends a daily email with NASA's Astronomy Picture of the Day (APOD)
 
 - Ensure that the `img/` directory exists in the root folder if you want to save images locally.
 - The `config.json` file and `mailing_list.csv` file should be properly configured before running the script.
+- Configure a **Cron Job** to deploy the script and ensure daily newsletter.

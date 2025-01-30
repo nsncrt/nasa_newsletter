@@ -1,6 +1,6 @@
 {
     "sender": {
-        "email": "YOUR_EMAIL_ADRESS",
+        "email": "YOUR_EMAIL_ADDRESS",
         "pwd": "YOUR_PASSWORD"
     },
     "smtp": {

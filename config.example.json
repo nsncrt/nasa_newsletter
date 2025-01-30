@@ -1,0 +1,14 @@
+{
+    "sender": {
+        "email": "YOUR_EMAIL_ADRESS",
+        "pwd": "YOUR_PASSWORD"
+    },
+    "smtp": {
+        "server": "smtp.gmail.com",
+        "port": 465
+    },
+    "api": {
+        "url": "https://api.nasa.gov/planetary/apod",
+        "key": "YOUR_API_KEY"
+    }
+}

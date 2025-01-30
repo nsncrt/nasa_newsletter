@@ -1,5 +1,6 @@
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from dotmap import DotMap
 
 from .nasafile import NasaFile
 
@@ -7,7 +8,7 @@ from .nasafile import NasaFile
 
 class Email:
     
-    def __init__(self, sender_email: str, receiver_info: dict[str, str]) :
+    def __init__(self, sender_email: str, receiver_info: DotMap) :
         self.sender_email = sender_email
         self.receiver_info = receiver_info
         self.html_text = None

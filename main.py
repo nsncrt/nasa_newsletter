@@ -26,6 +26,7 @@ server = ServerMail(config.smtp.server,config.smtp.port)
 with open('data/mailing_list.csv', newline='') as csvfile:
     receivers = csv.DictReader(csvfile, delimiter=',')
     for receiver_info in receivers:
+        receiver_info = DotMap(receiver_info)
         mail = Email(config.sender.email, receiver_info)
         mail.writeMsg(img)
-        server.sendEmail(mail.content, config.sender, receiver_info["email"])
+        server.sendEmail(mail.content, config.sender, receiver_info.email)
